@@ -37,3 +37,5 @@ arr = [1, 52, 2, 67, 8, 2]
 
 merge_sort(arr)
 print(arr)
+
+print("" + 7)
