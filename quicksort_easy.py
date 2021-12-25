@@ -49,6 +49,4 @@ def quicksort_(arr, l, r):
 
 
 quicksort_(arr, 0, len(arr)-1)
-# print(arr)
-
-print("ha" + 10)
+print(arr)
