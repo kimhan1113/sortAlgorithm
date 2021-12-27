@@ -10,7 +10,7 @@ def pibo(x):
     if d[x] != 0:
         return d[x]
 
-    d[x] = pibo(x-1) + pibo(x-2)
+    d[x] = pibo(x-1) + pibo(x-2) 
     return d[x]
 
 
