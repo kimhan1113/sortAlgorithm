@@ -28,16 +28,16 @@ arr = [1, 5, 7, 3, 2, 6, 9, 8, 4, 11, 15]
 
 
 def partions(arr, l, r):
-    if(l < r):
-        pivot = arr[r]
-        i = l-1
-        for j in range(l, r):
-            if(arr[j] <= pivot):
-                i = i+1
-                arr[j], arr[i] = arr[i], arr[j]
 
-        arr[i+1], arr[r] = arr[r], arr[i+1]
-        return i+1
+    pivot = arr[r]
+    i = l-1
+    for j in range(l, r):
+        if(arr[j] <= pivot):
+            i = i+1
+            arr[j], arr[i] = arr[i], arr[j]
+
+    arr[i+1], arr[r] = arr[r], arr[i+1]
+    return i+1
 
 
 def quicksort_(arr, l, r):
