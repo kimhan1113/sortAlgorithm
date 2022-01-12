@@ -13,3 +13,11 @@ def solution(progresses, speeds):
 
     answer.append(len(progresses)-front)
     return answer
+
+
+a = [95, 90, 99, 99, 80, 99]
+b = [1, 1, 1, 1, 1, 1]
+
+
+progresses = [((100-a)//b) for a, b in zip(a, b)]
+print(progresses)
