@@ -24,6 +24,8 @@ def solution(scoville, K):
 
 
 scoville = [1, 2, 3, 9, 10, 12]
-ans = solution(scoville, 7)
+# ans = solution(scoville, 7)
 
-print(ans)
+heap = [4, 1, 7, 3, 8, 5]
+heapq.heapify(heap)
+print(type(heap))
