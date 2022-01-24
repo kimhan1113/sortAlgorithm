@@ -12,8 +12,6 @@ def solution(participant, completion):
     for comp in completion:
         sumHash -= hash(comp)
 
-    print(hashDict[sumHash])
-
 
 solution(["marina", "josipa", "nikola", "vinko", "filipa"],
          ["josipa", "filipa", "marina", "nikola"])
@@ -23,4 +21,9 @@ solution(["marina", "josipa", "nikola", "vinko", "filipa"],
 def solution_(part, com):
 
     answer = col.Counter(part) - col.Counter(com)
-    return list(answer.keys())[0]
+    print(list(answer))
+    # return list(answer.keys())[0]
+
+
+solution_(["marina", "josipa", "nikola", "vinko", "filipa"],
+          ["josipa", "filipa", "marina", "nikola"])
