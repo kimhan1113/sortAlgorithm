@@ -1,4 +1,6 @@
 
+# 분할이 수행되는 횟수가 n, 분할하기 위해 선형탐색하는 횟수가 n
+# 최고 O(N²) 시간복잡도
 
 def partition(arr, l, r):
     pivot = arr[r]

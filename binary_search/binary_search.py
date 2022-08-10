@@ -25,3 +25,23 @@ if result == None:
 
 else:
     print(result + 1)
+
+
+
+
+def binary_search_target(arr:list, target:int, start:int, end:int)->int:
+    if start > end:
+        return None
+
+    mid = (start+end)//2
+
+    if arr[mid] == target:
+        return mid
+
+    elif arr[mid] > target:
+        binary_search_target(arr, target, start, mid-1)
+    else:
+        binary_search_target(arr, target, mid+1, end)
+
+
+

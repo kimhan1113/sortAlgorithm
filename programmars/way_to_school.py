@@ -15,7 +15,7 @@ def solution(m, n, puddles):
     return dp[n][m]
 
 
-# a = solution(4, 3, [[2, 2]])
+a = solution(4, 3, [[2, 2]])
 
 
 def solution_(m, n, puddles):
@@ -34,5 +34,26 @@ def solution_(m, n, puddles):
     return dp[n][m]
 
 
-a = [1, 'a']
-print(a)
+# a = [1, 'a']
+# print(a)
+
+
+# def solution(m, n, puddles):
+#     m, n = m-1, n-1
+#     dp = [[0 for i in range(m+1)] for j in range(n+1)]
+#     dp[0][0] = 1
+
+#     for dia in range(1, m+n+1):
+#         for r in range(dia+1):
+#             c = dia - r
+#             if [c+1, r+1] in puddles:
+#                 continue
+#             elif r > n or c > m:
+#                 continue
+
+#             if r > 0:
+#                 dp[r][c] += dp[r-1][c]
+#             if c > 0:
+#                 dp[r][c] += dp[r][c-1]
+
+#     return dp[-1][-1] % 1000000007

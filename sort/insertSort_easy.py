@@ -16,3 +16,12 @@ def insertSort(arr):
 
 arr = insertSort(arr_list)
 print(arr)
+
+
+
+for i in range(1, len(arr_list)):
+    for j in range(i, 0, -1):
+        if arr_list[j] > arr_list[j-1]:
+            arr_list[j], arr_list[j-1] = arr_list[j-1], arr_list[j]
+        else:
+            break    

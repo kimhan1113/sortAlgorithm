@@ -15,3 +15,14 @@ def selectSort(arr):
 
 arr = selectSort(arr_list)
 print(arr)
+
+
+for i in range(len(arr_list)):
+    min_index = i
+    for j in range(i+1, len(arr_list)):
+        if arr_list[min_index] > arr_list[j]:
+            min_index = j
+
+    arr_list[i], arr_list[min_index] = arr_list[min_index], arr_list[i]
+
+    
