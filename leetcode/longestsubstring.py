@@ -8,9 +8,15 @@ class Solution:
                 answer = max(answer, (right - left) + 1)
             else:
                 while left <= right and ch in check:
-                    if s[left] in  check:
+                    if s[left] in check:
                         check.remove(s[left])
                     left += 1
+                    print(ch)
                 check.add(ch)       
 
-        return answer            
+        return answer
+
+
+sol = Solution()             
+print(sol.lengthOfLongestSubstring("abcdac"))
+
