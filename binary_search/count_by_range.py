@@ -7,8 +7,10 @@ def count_by_range(a, left_value, right_value):
 
     return right_index - left_index
 
-
-
+def count_by_range(arr, left_value, right_value):
+    left = bisect_left(arr, left_value)
+    right = bisect_right(arr, right_value)
+    return right - left
 
 a = [1, 2, 3, 3, 3, 3, 4, 4, 8, 9]
 
@@ -17,3 +19,16 @@ print(count_by_range(a, 4, 4))
 
 # 값이 -1 ~ 3 범위에 있는 데이터 개수 출력
 print(count_by_range(a, -1, 3))
+
+
+
+
+
+
+
+
+
+def count_by_range(array, left_value, right_value):
+    right = bisect_right(array, right_value)
+    left = bisect_left(array, left_value)
+    return right - left
